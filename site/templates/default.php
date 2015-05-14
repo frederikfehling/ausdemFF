@@ -1,12 +1,25 @@
-<?php snippet('header') ?>
+<!DOCTYPE html>
 
-  <main class="main" role="main">
+<html lang="de">
 
-    <div class="text">
-      <h1><?php echo $page->title()->html() ?></h1>
-      <?php echo $page->text()->kirbytext() ?>
-    </div>
+  <head>
 
-  </main>
+    <meta charset="utf-8">
 
-<?php snippet('footer') ?>
+    <title><?php echo $site->title() ?></title>
+
+  </head>
+
+  <body>
+
+    <main class="main" role="main">
+
+        <h1><?php echo $page->title()->html() ?></h1>
+
+        <p><?php echo $page->text()->kirbytext() ?></p>
+
+    </main>
+
+  </body>
+
+</html>
